@@ -99,7 +99,7 @@ using namespace std;
 }*/
 
 //wykrywanie konturu
-int main()
+/*int main()
 {
     VideoCapture capture = VideoCapture(0);
     string window_name [] = { "Kamera", "Contour", "Binary" };
@@ -163,10 +163,10 @@ int main()
     }
     capture.release();
     return 0;
-}
+}*/
 
 //detekcja twarzy
-/*string face_cascade_name = "haarcascade_frontalface_alt.xml";    //Nazwa kaskady któr¹ wykorzystujemy do rozpoznania twarzy
+string face_cascade_name = "haarcascade_frontalface_alt.xml";    //Nazwa kaskady któr¹ wykorzystujemy do rozpoznania twarzy
 CascadeClassifier face_cascade;                                //Utworzenie obiektu cascady twarzy
 string window_name = "Hello Face !";
 const string img_name = "cotillard.jpg";
@@ -209,4 +209,4 @@ void detectFace( Mat img )
         rectangle(img, rect_face, Scalar( 120, 5, 86 ), 2, 2, 0  );
     }
     imshow(window_name, img);                        //Pokazanie obrazka w oknmie o nazwie "Hello Face !"
-}*/
+}
